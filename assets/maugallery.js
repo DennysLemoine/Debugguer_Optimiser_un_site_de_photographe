@@ -177,7 +177,7 @@
         $(".item-column").each(function() {
           if (
             $(this)
-              .children("img")
+              .children("picture")
               .data("gallery-tag") === activeTag
           ) {
             imagesCollection.push($(this).children("img"));
@@ -261,3 +261,5 @@
     }
   };
 })(jQuery);
+
+$.fn.jquery
