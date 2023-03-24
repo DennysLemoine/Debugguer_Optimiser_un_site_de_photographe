@@ -50,7 +50,7 @@
   };
   $.fn.mauGallery.listeners = function(options) {
     $(".gallery-item-img").on("click", function() {
-      if (options.lightBox && $(this).prop("tagName") === "IMG") {
+      if (options.lightBox && $(this).prop("tagName") === "PICTURE") {
         $.fn.mauGallery.methods.openLightBox($(this), options.lightboxId);
       } else {
         return;
