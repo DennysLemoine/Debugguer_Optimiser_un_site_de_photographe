@@ -3,8 +3,8 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
-	<meta name="description" content="Voici le portefolio de Nina Carducci, une photographe pour tous vos évènements. Explorez ses photos et réservez votre séance dès maintenant pour immortaliser vos moments.">
-	<title>Nina Carducci - Photographe professionelle</title>
+	<meta name="description" content="Voici le portefolio de Nina Carducci, une photographe située à Bordeaux. Explorez ses photos et réservez votre séance dès maintenant pour immortaliser vos moments.">
+	<title>Nina Carducci - Photographe professionelle à Bordeaux</title>
 	<!--<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">-->
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.css">
@@ -20,7 +20,7 @@
 </head>
 <body>
 <div class="top-header">
-	<h1 class="name">Nina Carducci</h1>
+	<h1 class="name">Nina Carducci | Photographe à Bordeaux</h1>
 	<div class="nav">   
 		<ul>
 			<li><a href="#about">À propos</a></li>
@@ -204,10 +204,27 @@
 		<figcaption class="quote__author">- Richard Avedon</figcaption>
 	</figure>
 </div>
-<div id="contact">
+<div id="contact" itemscope itemtype="https://schema.org/LocalBusiness">
+	<div class="informations_local">
+		<h2 class="contact">CONTACT</h2>
+		<div itemprop="name">Nina Carducci</div>
+		<div itemprop="adress" itemscope itemtype="https://schema.org/PostalAdress">
+			<span itemprop="streetAdress">68 avenue Alsace-Lorraine<br></span>
+			<span itemprop="adressLocality">Bordeaux</span>
+			<span itemprop="postalCode">33200</span>
+			<span itemprop="adressRegion">Nouvelle-Aquitaine<br></span>
+			<span itemprop="adressCountry">France<br></span>
+		</div>
+		<div itemprop="telephone">05 56 67 78 89</div>
+		<div itemprop="openingHoursSpecification" itemscope itemtype="https://schema.org/OpeningHoursSpecification">
+			<meta itemprop="dayOfWeek" content="du Lundi au Vendredi">
+			<meta itemprop="opens" content="10:00">
+			<meta itemprop="closes" content="19:00">
+		</div>
+	</div>
 	<div class="container">
 		<div class="form-container">
-			<h2>Une question ? Une demande de devis ?</h2>
+			<h3>Une question ? Une demande de devis ?</h3>
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 			<form action="" method="post">
 				<label for="nom">Nom</label>
