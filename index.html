@@ -12,7 +12,9 @@
 	<script src="./assets/maugallery.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
 	<!--<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">-->
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" media="none" onload="if(media!='all')media='all'">
+	<link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style">
+	<link rel="preload" href="./assets/style.css" as="style">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -205,24 +207,24 @@
 	</figure>
 </div>
 <div id="contact" itemscope itemtype="https://schema.org/LocalBusiness">
-	<div class="informations_local">
-		<h2 class="contact">CONTACT</h2>
-		<div itemprop="name">Nina Carducci</div>
-		<div itemprop="adress" itemscope itemtype="https://schema.org/PostalAdress">
-			<span itemprop="streetAdress">68 avenue Alsace-Lorraine<br></span>
-			<span itemprop="adressLocality">Bordeaux</span>
-			<span itemprop="postalCode">33200</span>
-			<span itemprop="adressRegion">Nouvelle-Aquitaine<br></span>
-			<span itemprop="adressCountry">France<br></span>
-		</div>
-		<div itemprop="telephone">05 56 67 78 89</div>
-		<div itemprop="openingHoursSpecification" itemscope itemtype="https://schema.org/OpeningHoursSpecification">
-			<meta itemprop="dayOfWeek" content="du Lundi au Vendredi">
-			<meta itemprop="opens" content="10:00">
-			<meta itemprop="closes" content="19:00">
-		</div>
-	</div>
 	<div class="container">
+		<div class="informations_local">
+			<h2 class="contact">CONTACT</h2>
+			<div itemprop="name">Nina Carducci</div>
+			<div itemprop="adress" itemscope itemtype="https://schema.org/PostalAdress">
+				<span itemprop="streetAdress">68 avenue Alsace-Lorraine<br></span>
+				<span itemprop="adressLocality">Bordeaux</span>
+				<span itemprop="postalCode">33200</span>
+				<span itemprop="adressRegion">Nouvelle-Aquitaine<br></span>
+				<span itemprop="adressCountry">France<br></span>
+			</div>
+			<div itemprop="telephone">05 56 67 78 89</div>
+			<div itemprop="openingHoursSpecification" itemscope itemtype="https://schema.org/OpeningHoursSpecification">
+				<meta itemprop="dayOfWeek" content="du Lundi au Vendredi">
+				<meta itemprop="opens" content="10:00">
+				<meta itemprop="closes" content="19:00">
+			</div>
+		</div>
 		<div class="form-container">
 			<h3>Une question ? Une demande de devis ?</h3>
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>

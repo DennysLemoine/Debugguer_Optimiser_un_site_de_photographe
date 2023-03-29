@@ -19,6 +19,7 @@ body {
 }
 .top-header .name {
 	font-size: 22px;
+	text-align: center;
 }
 .nav ul {
 	display: flex;
@@ -27,6 +28,7 @@ body {
 }
 .nav li {
 	padding-inline: 10px;
+	text-align: center;
 }
 .nav a {
 	text-decoration: none;
@@ -200,7 +202,7 @@ body {
 	display: flex;
 }
 .informations_local {
-	padding-left: 1em;
+	padding-left: 13.3em;
 	margin-bottom: 2em;
 }
 .contact {
@@ -257,8 +259,12 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me h3, #about-me p {
 		width: 100%;
+	}
+	.informations_local {
+		padding-left: 0;
+		padding-right: 4em;
 	}
 }
 @media all and (max-width: 1000px) {
@@ -317,6 +323,14 @@ input[type="submit"] {
 		bottom: 0;
 		right: 0;
 		z-index: -1;
+	}
+	form {
+		width: 100%;
+	}
+	.informations_local {
+		text-align: center;
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 @media all and (max-width: 650px) {
