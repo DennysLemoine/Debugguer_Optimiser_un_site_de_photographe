@@ -202,7 +202,7 @@ body {
 	display: flex;
 }
 .informations_local {
-	padding-left: 13.3em;
+	padding: 0 6em;
 	margin-bottom: 2em;
 }
 .contact {
