@@ -4,6 +4,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<meta name="description" content="Voici le portefolio de Nina Carducci, une photographe située à Bordeaux. Explorez ses photos et réservez votre séance dès maintenant pour immortaliser vos moments.">
+	<!--META OpenGraph-->
+	<meta property="og:title" content="Nina Carducci - Photographe professionelle à Bordeaux"/>
+	<meta property="og:type" content="article"/>
+	<meta property="og:url" content="https://dennyslemoine.github.io/Debugguer_Optimiser_un_site_de_photographe/"/>
+	<meta property="og:image" content="nina_resultat_mobile.webp"/>
+	<meta property="og:description" content="Découvrez Nina Carducci, une photographe professionnelle située à Bordeaux !"/>
+	<meta property="og:locale" content="fr_FR"/>
+	<!--META TwitterCard-->
+	<meta name="twitter:title" content="Nina Carducci - Photographe professionelle à Bordeaux">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@NinaCarducci" />
+	<meta name="twitter:creator" content="@NinaCarducci" />
+	<meta name="twitter:image" content="https://dennyslemoine.github.io/Debugguer_Optimiser_un_site_de_photographe/assets/images/nina_resultat.webp">
+	<meta name="twitter:description" content="Découvrez Nina Carducci, une photographe professionnelle située à Bordeaux !">
 	<title>Nina Carducci - Photographe professionelle à Bordeaux</title>
 	<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha384-UG8ao2jwOWB7/oDdObZc6ItJmwUkR/PfMyt9Qs5AwX7PsnYn1CRKCTWyncPTWvaS" crossorigin="anonymous" defer></script>
 	<!--<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>-->
@@ -21,7 +35,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="top-header">
+<header class="top-header">
 	<h1 class="name">Nina Carducci | Photographe à Bordeaux</h1>
 	<div class="nav">   
 		<ul>
@@ -32,7 +46,7 @@
 			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="logo de Instagram"></a></li>
 		</ul>
 	</div>
-</div>
+</header>
 <div id="header">
 
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -110,9 +124,9 @@
 			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-rvf2r_qmprk-unsplash_resultat.webp" alt="Photo gros plans des mains des mariés qui se touchent du bout des doigts"/>
 			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-siniljkxhmc-unsplash_resultat.webp" alt="Photo des mariés dans un jardin, ils marchent en se regardant et rigolant vers le photographe"/>
 			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rvkhwwzfatq-unsplash_resultat.webp" alt="Photo portrait d'un homme, il a les yeux fermés ébloui par le soleil"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1ur_8-unsplash_resultat.webp" alt="Photo portrait d'une femme, elle pose pour le photographe, une main dans les cheveux, et regardant vers le sol"/>
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnx-fxzb6cw-unsplash_resultat.webp" alt="Photo d'une foule à un concert, dans une salle sombre avec des spots rouges, vue de la foule vers la scène"/>
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgo1wfpxl3i-unsplash_resultat.webp" alt="Photo d'un chanteur, contre-plongée, durant son concert, il chante et fait le signe 4 avec ses doigts, il y a de la fumée bleue/rouge derrière lui"/>
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1ur_8-unsplash_resultat.webp" alt="Photo portrait d'une femme, elle pose pour le photographe et regardant vers le sol"/>
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnx-fxzb6cw-unsplash_resultat.webp" alt="Photo d'une foule à un concert, dans une salle sombre avec des spots rouges"/>
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgo1wfpxl3i-unsplash_resultat.webp" alt="Photo d'un chanteur, contre-plongée, durant son concert, il y a de la fumée bleue/rouge derrière lui"/>
 		</div>
 	</div>
 	<div class="quote">
@@ -133,7 +147,7 @@
 				<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 			</div>
 			<div class="service__price">
-				<p class="service__price_p">350€/demi journée</p>
+				<h4 class="service__price_p">350€/demi journée</h4>
 				<span>Matériel, déplacement inclus</span>
 			</div>
 
@@ -144,7 +158,7 @@
 				<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
 			</div>
 			<div class="service__price">
-				<p class="service__price_p">50€/photo</p>
+				<h4 class="service__price_p">50€/photo</h4>
 				<span>2 AR par photo</span>
 			</div>
 		</div>
@@ -154,7 +168,7 @@
 				<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
 			</div>
 			<div class="service__price">
-				<p class="service__price_p">400€ album A4</p>
+				<h4 class="service__price_p">400€ album A4</h4>
 				<span>30 pages recto/verso</span>
 			</div>
 		</div>
