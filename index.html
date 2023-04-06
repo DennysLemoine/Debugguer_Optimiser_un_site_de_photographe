@@ -1,31 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
+	<meta charset="UTF-8">
+	<meta name="description" content="Voici le portefolio de Nina Carducci, une photographe située à Bordeaux. Explorez ses photos et réservez votre séance dès maintenant pour immortaliser vos moments.">
+	<!--META OpenGraph-->
+	<meta property="og:image" content="https://dennyslemoine.github.io/Debugguer_Optimiser_un_site_de_photographe/assets/images/slider/nicholas-green-npz8akkumdi-unsplash_resultat.webp"/>
+	<meta property="og:title" content="Nina Carducci - Photographe professionelle à Bordeaux"/>
+	<meta property="og:type" content="article"/>
+	<meta property="og:url" content="https://dennyslemoine.github.io/Debugguer_Optimiser_un_site_de_photographe/"/>
+	<meta property="og:description" content="Découvrez Nina Carducci, une photographe professionnelle située à Bordeaux !"/>
+	<meta property="og:locale" content="fr_FR"/>
+	<!--META TwitterCard-->
+	<meta name="twitter:title" content="Nina Carducci - Photographe professionelle à Bordeaux">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@NinaCarducci" />
+	<meta name="twitter:creator" content="@NinaCarducci" />
+	<meta name="twitter:image" content="https://dennyslemoine.github.io/Debugguer_Optimiser_un_site_de_photographe/assets/images/slider/nicholas-green-npz8akkumdi-unsplash_resultat.webp">
+	<meta name="twitter:description" content="Découvrez Nina Carducci, une photographe professionnelle située à Bordeaux !">
+	<title>Nina Carducci - Photographe professionelle à Bordeaux</title>
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha384-UG8ao2jwOWB7/oDdObZc6ItJmwUkR/PfMyt9Qs5AwX7PsnYn1CRKCTWyncPTWvaS" crossorigin="anonymous" defer></script>
+	<!--<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>-->
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
+	<!--<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>-->
+	<script src="./assets/maugallery.js" defer></script>
+	<script src="./assets/scripts.js" defer></script>
+	<!--<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">-->
+	<link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style">
+	<link rel="preload" href="./assets/style.css" as="style">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-	<meta charset="UTF-8">
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
 </head>
 <body>
-<div class="top-header">
-	<h3 class="name">Nina Carducci</h3>
+<header class="top-header">
+	<h1 class="name">Nina Carducci | Photographe à Bordeaux</h1>
 	<div class="nav">   
 		<ul>
 			<li><a href="#about">À propos</a></li>
 			<li><a href="#gallery">Galerie</a></li>
 			<li><a href="#services">Service</a></li>
 			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt=""></a></li>
+			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="logo de Instagram"></a></li>
 		</ul>
 	</div>
-</div>
+</header>
 <div id="header">
 
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -36,13 +57,28 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" class="d-block w-100" alt="...">
+				<picture>
+					<source srcset="./assets/images/slider/ryoji-iwata-wuzjnov7t0g-unsplash_resultat_mobile.webp" type="image/webp" media="(max-width: 650px)">
+					<source srcset="./assets/images/slider/ryoji-iwata-wuzjnov7t0g-unsplash_resultat.webp" type="image/webp" media="(max-width: 1920px)">
+					<source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" type="image/jpeg" media="(max-width: 1920px)">
+					<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" alt="Homme en costar noir qui marche de dos sur un passage piéton en vue plongée" class="d-block w-100">
+				</picture>
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg" class="d-block w-100" alt="...">
+				<picture>
+					<source srcset="./assets/images/slider/nicholas-green-npz8akkumdi-unsplash_resultat_mobile.webp" type="image/webp" media="(max-width: 650px)">
+					<source srcset="./assets/images/slider/nicholas-green-npz8akkumdi-unsplash_resultat.webp" type="image/webp" media="(max-width: 1920px)">
+					<source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg" type="image/jpeg" media="(max-width: 1920px)">
+					<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg" alt="Foule de personnes, de face, qui s'amusent et chantent durant un concert" class="d-block w-100">
+				</picture>
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg" class="d-block w-100" alt="...">
+				<picture>
+					<source srcset="./assets/images/slider/edward-cisneros-3_h6-1npdgw-unsplash_resultat_mobile.webp" type="image/webp" media="(max-width: 650px)">
+					<source srcset="./assets/images/slider/edward-cisneros-3_h6-1npdgw-unsplash_resultat.webp" type="image/webp" media="(max-width: 1920px)">
+					<source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg" type="image/jpeg" media="(max-width: 1920px)">
+					<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg" alt="Un homme et une femme durant leur bal de mariage qui s'embrassent au centre d'une foule d'invités" class="d-block w-100">
+				</picture>
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -57,41 +93,53 @@
 </div>
 <div id="about">
 	<div class="picture left">
-		<img src="./assets/images/nina.png">
+		<picture>
+			<source srcset="./assets/images/nina_resultat_mobile.webp" type="image/webp" media="(max-width: 650px)">
+			<source srcset="./assets/images/nina_resultat.webp" type="image/webp" media="(max-width: 1920px)">
+			<source srcset="./assets/images/nina.png" type="image/jpeg" media="(max-width: 650px)">
+			<img src="./assets/images/nina.png" alt="Photo de la photographe à qui appartient le site, pose de face dans la nature avec un sourire">
+		</picture>
 	</div>
 	<div id="about-me">
-		<h3 class="about-me__title">A propos de moi</h3>
-		<h6 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h6>
+		<h2 class="about-me__title">A propos de moi</h2>
+		<h3 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h3>
 		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</div>
 </div>
 <div id="gallery">
-	<h3 class="title">Portfolio</h3>
+	<h2 class="title">Portfolio</h2>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.jpg"/>
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg"/>
+			<!-- TEST -->
+			<!--<picture data-gallery-tag="Entreprises" class="gallery-item">
+			<source srcset="assets/images/gallery/entreprise/ali-morshedlou-wmd64tmfc4k-unsplash_resultat_mobile.webp" type="image/webp" media="(max-width: 650px)">
+			<source srcset="assets/images/gallery/entreprise/ali-morshedlou-wmd64tmfc4k-unsplash_resultat.webp" type="image/webp" media="(max-width: 1920px)">
+			<source srcset="assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg" type="image/jpeg" media="(max-width: 1920px)">
+			<img class="gallery-item-img" src="./assets/images/gallery/entreprise/ali-morshedlou-wmd64tmfc4k-unsplash_resultat.webp" alt="Homme en costard noir, les bras croisés en train de sourire, face caméra"/>
+			</picture>-->
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-wmd64tmfc4k-unsplash_resultat.webp" alt="Homme en costard noir, les bras croisés en train de sourire, face caméra"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tho1_oukbg0-unsplash_resultat.webp" alt="Femme heureuse, avec un large sourire dans une salle de réunion professionnelle"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-fsgzm8n0hiy-unsplash_resultat.webp" alt="Femme à son bureau de travail, sur son ordinateur, qui rigole en regardant vers une personne"/>
+			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-rvf2r_qmprk-unsplash_resultat.webp" alt="Photo gros plans des mains des mariés qui se touchent du bout des doigts"/>
+			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-siniljkxhmc-unsplash_resultat.webp" alt="Photo des mariés dans un jardin, ils marchent en se regardant et rigolant vers le photographe"/>
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rvkhwwzfatq-unsplash_resultat.webp" alt="Photo portrait d'un homme, il a les yeux fermés ébloui par le soleil"/>
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1ur_8-unsplash_resultat.webp" alt="Photo portrait d'une femme, elle pose pour le photographe et regardant vers le sol"/>
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnx-fxzb6cw-unsplash_resultat.webp" alt="Photo d'une foule à un concert, dans une salle sombre avec des spots rouges"/>
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgo1wfpxl3i-unsplash_resultat.webp" alt="Photo d'un chanteur, contre-plongée, durant son concert, il y a de la fumée bleue/rouge derrière lui"/>
 		</div>
 	</div>
 	<div class="quote">
 		<figure>
 			<blockquote>
-				<h1 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h1>
+				<p class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</p>
 			</blockquote>
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
 	</div>
 </div>
 <div id="services">
-	<h3 class="title">Mes services</h3>
+	<h2 class="title">Mes services</h2>
 	<div class="container">
 		<div class="service">
 			<div class="service__description">
@@ -99,7 +147,7 @@
 				<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 			</div>
 			<div class="service__price">
-				<h4>350€/demi journée</h4>
+				<h4 class="service__price_p">350€/demi journée</h4>
 				<span>Matériel, déplacement inclus</span>
 			</div>
 
@@ -110,7 +158,7 @@
 				<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
 			</div>
 			<div class="service__price">
-				<h4>50€/photo</h4>
+				<h4 class="service__price_p">50€/photo</h4>
 				<span>2 AR par photo</span>
 			</div>
 		</div>
@@ -120,7 +168,7 @@
 				<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
 			</div>
 			<div class="service__price">
-				<h4>400€ album A4</h4>
+				<h4 class="service__price_p">400€ album A4</h4>
 				<span>30 pages recto/verso</span>
 			</div>
 		</div>
@@ -129,28 +177,50 @@
 <div class="quote">
 	<figure>
 		<blockquote>
-			<h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
+			<p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</p>
 		</blockquote>
 		<figcaption class="quote__author">- Richard Avedon</figcaption>
 	</figure>
 </div>
-<div id="contact">
+<div id="contact" itemscope itemtype="https://schema.org/LocalBusiness">
 	<div class="container">
+		<div class="informations_local">
+			<h2 class="contact">CONTACT</h2>
+			<div itemprop="name">Nina Carducci</div>
+			<div itemprop="adress" itemscope itemtype="https://schema.org/PostalAdress">
+				<span itemprop="streetAdress">68 avenue Alsace-Lorraine<br></span>
+				<span itemprop="adressLocality">Bordeaux</span>
+				<span itemprop="postalCode">33200</span>
+				<span itemprop="adressRegion">Nouvelle-Aquitaine<br></span>
+				<span itemprop="adressCountry">France<br></span>
+			</div>
+			<div itemprop="telephone">05 56 67 78 89</div>
+			<div itemprop="openingHoursSpecification" itemscope itemtype="https://schema.org/OpeningHoursSpecification">
+				<meta itemprop="dayOfWeek" content="du Lundi au Vendredi">
+				<meta itemprop="opens" content="10:00">
+				<meta itemprop="closes" content="19:00">
+			</div>
+		</div>
 		<div class="form-container">
 			<h3>Une question ? Une demande de devis ?</h3>
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 			<form action="" method="post">
-				<label>Nom</label>
+				<label for="nom">Nom</label>
 				<input type="text" name="nom" id="nom">
-				<label>Email</label>
+				<label for="email">Email</label>
 				<input type="email" name="email" id="email">
-				<label>Message</label>
+				<label for="message">Message</label>
 				<textarea name="message" id="message" cols="30" rows="10"></textarea>
 				<input type="submit" value="Envoyer"/>
 			</form>
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/camera.png">
+			<picture>
+				<source srcset="./assets/images/camera_resultat_mobile.webp" type="image/webp" media="(max-width: 650px)">
+				<source srcset="./assets/images/camera_resultat.webp" type="image/webp" media="(max-width: 1920px)">
+				<source srcset="./assets/images/camera.png" type="image/jpeg" media="(max-width: 1920px)">
+				<img src="./assets/images/camera.png" loading="lazy" alt="Photo gros plan d'un appareil photo posé, qui reçoit la lumière d'un couché de soleil">
+			</picture>
 		</div>
 	</div>
 </div>
